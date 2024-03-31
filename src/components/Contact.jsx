@@ -1,20 +1,5 @@
 import React from "react";
 
-const fadeInVariants = {
-  hidden: {
-    opacity: 0,
-    y: 100,
-  },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 0.1,
-      duration: 1,
-    },
-  },
-};
-
 const Contact = () => {
   return (
     <div name="contact" className="  w-full  pb-12 md:pb-24 full px-4 md:px-16">

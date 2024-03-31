@@ -9,6 +9,7 @@ const Profile = () => {
   const [contactNumber, setContactNumber] = useState("");
   const [error, setError] = useState("");
 
+  /*
   const levelDescription = {
     1: "Beginner",
     2: "Not bad but need exercise",
@@ -16,6 +17,7 @@ const Profile = () => {
     4: "Excellent",
     5: "Champions League Legend",
   };
+  */
 
   const handleSubmit = (e) => {
     e.preventDefault();

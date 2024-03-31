@@ -45,12 +45,12 @@ const NavBar = () => {
       </motion.div>
       <div className="flex gap-4">
         <ul className="hidden sm:flex justify-between items-center  text-white">
-          {links.map(({ id, link }) => (
+          {links.map(({ id, link, href }) => (
             <li
               key={link.id}
               className="px-4 cursor-pointer text-lg hover:scale-110 duration-200 "
             >
-              <a href="#reser">{link}</a>
+              <a href={href}>{link}</a>
             </li>
           ))}
         </ul>
@@ -69,12 +69,12 @@ const NavBar = () => {
         </div>
         {nav && (
           <ul className="flex flex-col  gap-8 justify-center items-center absolute top-0 left-0 w-full h-50 mt-14 bg-primary py-8 text-white">
-            {links.map(({ id, link }) => (
+            {links.map(({ id, link, href }) => (
               <li
                 key={link.id}
                 className="px-4  cursor-pointer text-lg font-bold text-white hover:scale-110 duration-200 "
               >
-                <a href="">{link}</a>
+                <a href={href}>{link}</a>
               </li>
             ))}
           </ul>

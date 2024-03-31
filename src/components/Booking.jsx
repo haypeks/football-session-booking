@@ -18,8 +18,6 @@ const Booking = () => {
 
     // Loop through each day of the month
     for (let day = 1; day <= daysInMonth; day++) {
-      const date = new Date(2024, 3, day); // April is month 3 (0-based index)
-
       // Check if the current day is available
       const isAvailable = availableDates.includes(day);
 
