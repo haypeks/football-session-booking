@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  html {
+    font-family: "Nunito Sans", sans-serif;
+  }
+}
+
+.text-primary {
+  color: #3d9f7a;
+}
+
+.text-accent {
+  color: rgb(14, 45, 72);
+}
+
+.hero-background {
+  background-image: url("assets/herobg.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.other-bg {
+  background-image: url("assets/otherbg.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.contact-banner {
+  padding: 10rem 0;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.5) 65%,
+      #000 100%
+    ),
+    url("assets/football-3475163_1280.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.bg-membership {
+  background: linear-gradient(
+    180deg,
+    rgba(61, 159, 122, 1) 1%,
+    rgba(6, 45, 30, 1) 100%
+  );
+}
+
+.grid-seven {
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.bg-primary {
+  background-color: #3d9f7a;
+}
+.bg-accent {
+  background-color: rgb(14, 45, 72);
+}
+
+.gradient-text {
+  background: linear-gradient(
+    90deg,
+    rgba(8, 177, 163, 1) 0%,
+    rgba(7, 58, 187, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
