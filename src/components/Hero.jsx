@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -11,9 +12,13 @@ const Hero = () => {
           From beginners to legends, whether you're galactico or just built like
           an egg, you will fit right in
         </p>
-        <button className="bg-primary px-6 py-2 text-white text-xl rounded mb-96 md:mb-0 font-bold -mr-2 sm:mr-0">
+
+        <Link
+          to="/profile"
+          className="bg-primary px-6 py-2 text-white text-xl rounded mb-96 md:mb-0 font-bold -mr-2 sm:mr-0"
+        >
           Play Football
-        </button>
+        </Link>
       </div>
     </div>
   );
